@@ -1,0 +1,10 @@
+Host bastion
+    User ec2-user
+    Hostname 54.211.19.80
+    IdentityFile ~/Downloads/grafana.pem
+    ForwardAgent yes
+
+Host Private
+    User ec2-user
+    Hostname 10.0.2.232
+    ProxyCommand ssh -F ansible_ssh_config bastion -W %h:%p

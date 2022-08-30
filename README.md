@@ -1,0 +1,1 @@
+## Managing EC2 instances using Ansible Dynamic Inventory & Local system

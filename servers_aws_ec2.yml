@@ -1,0 +1,9 @@
+plugin: aws_ec2
+aws_profile: personal
+regions:
+  - us-east-1
+keyed_groups:
+  - key: tags.Env
+    separator: ''
+hostnames:
+  - tag:Name
